@@ -48,7 +48,7 @@ contextforge init --ide claude-code --templates --gitignore
 
 ### IDE targets
 
-`claude-code` · `cursor` · `windsurf` · `vscode` · `antigravity`
+`claude-code` · `cursor` · `windsurf` · `vscode` · `antigravity` · `bob`
 
 ---
 
@@ -127,6 +127,20 @@ The MCP server exposes four tools that let your AI assistant pull live project c
 }
 ```
 
+### Bob
+
+```json
+// .bob/mcp.json
+{
+  "mcpServers": {
+    "contextforge": {
+      "command": "npx",
+      "args": ["-y", "contextforge-mcp"]
+    }
+  }
+}
+```
+
 ---
 
 ## MCP tools
@@ -193,6 +207,7 @@ The same content is stripped of delimiters and written to the IDE's native instr
 | Windsurf | `.windsurfrules` |
 | VS Code | `.github/copilot-instructions.md` |
 | Antigravity | `.antigravity-context.md` |
+| Bob | `.bob/context.md` |
 
 ---
 
@@ -308,5 +323,6 @@ See also: [Code of Conduct](CODE_OF_CONDUCT.md) · [Security Policy](SECURITY.md
 <table>
   <tr>
     <td align="center"><a href="https://github.com/beethovkjfe"><img src="https://avatars.githubusercontent.com/u/88784181?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beethov KJ</b></sub></a></td>
+    <td align="center"><a href="https://github.com/mikdhadc"><img src="https://avatars.githubusercontent.com/u/54241506?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammed Mikdhad C</b></sub></a></td>
     </tr>
     </table>
